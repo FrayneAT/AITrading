@@ -18,12 +18,7 @@
 					prefix = "sz";
 				}
 				if(prefix != null){
-					var exitTime = new Date().getTime() + 1000;
-					while (true) {
-						if (new Date().getTime() > exitTime){
-							break;
-						}
-					}
+					alert("See detail.");
 					window.location.href = "http://quote.eastmoney.com/concept/" + prefix + code + ".html#fschart-r";
 				}
 			}
