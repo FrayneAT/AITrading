@@ -6,7 +6,6 @@
 	<script>LA.init({id: "JPQy6CRVB05ZyjqY",ck: "JPQy6CRVB05ZyjqY"})</script>
 	-->
 	<script>
-		alert("start");
 		var reg = new RegExp("(^|&)code=([^&]*)(&|$)");
 		var r = window.location.search.substr(1).match(reg);
 		if(r != null){
@@ -20,16 +19,10 @@
 				}
 				if(prefix != null){
 					var url = "http://quote.eastmoney.com/concept/" + prefix + code + ".html#fschart-r";
-					alert(0);
+					setTimeout(function(){ alert("Jump"); }, 300);
 					window.location.href = url;
-				}else{
-					alert(3);
 				}
-			}else{
-				alert(2);
 			}
-		}else{
-			alert(1);
 		}
 	</script>
 </head>
