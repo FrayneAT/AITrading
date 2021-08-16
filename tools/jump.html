@@ -18,11 +18,9 @@
 					prefix = "sz";
 				}
 				if(prefix != null){
-					var now = new Date();
-					var exitTime = now.getTime() + 1000;
+					var exitTime = new Date().getTime() + 1000;
 					while (true) {
-						now = new Date();
-						if (now.getTime() > exitTime){
+						if (new Date().getTime() > exitTime){
 							break;
 						}
 					}
