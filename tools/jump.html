@@ -20,7 +20,7 @@
 				if(prefix != null){
 					var url = "http://quote.eastmoney.com/concept/" + prefix + code + ".html#fschart-r";
 					window.location.href = url;
-					window.event.returnValue = false;
+					return false;
 				}
 			}
 		}
